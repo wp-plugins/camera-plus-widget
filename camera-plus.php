@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Camera+ Widget
  * Plugin URI: http://austinpassy.com/wordpress-plugins/camera-plus-widget
- * Description: Showcase your <a href="http://camerapl.us/">camera+</a> photos in a widget.
+ * Description: Showcase your <a href="http://frosty.me/camera-plus/">camera+</a> photos in a widget.
  * Version: 0.1
  * Author: Austin Passy
  * Author URI: http://austinpassy.com
@@ -240,17 +240,18 @@ if ( !class_exists( 'camera_plus_widget' ) ) {
 					<?php } ?>
 				</select>
 			</p>
-		<p>
-			<label for="<?php echo $this->get_field_id( 'iframe' ); ?>"><code><?php _e( 'iframe', $this->textdomain ); ?></code>
-			<input class="checkbox" type="checkbox" <?php checked( $instance['iframe'], true ); ?> id="<?php echo $this->get_field_id( 'iframe' ); ?>" name="<?php echo $this->get_field_name( 'iframe' ); ?>" />
-            <span class="description"><?php _e( 'Check the box to output your images in the camera+ iframe. Leaving the box unchecked with use javascript.', $this->textdomain ); ?></span></label>
-		</p>
-		<?php if ( !$instance['iframe'] ) { ?>
-        <p>
-			<label for="<?php echo $this->get_field_id( 'recent' ); ?>"><code><?php _e( 'image count:', $this->textdomain ); ?></code></label>
-        	<input type="text" class="smallfat code" id="<?php echo $this->get_field_id( 'recent' ); ?>" name="<?php echo $this->get_field_name( 'recent' ); ?>" value="<?php echo esc_attr( $instance['recent'] ); ?>" maxlength="2" />
-        </p>
-        <?php } ?>
+            <p>
+                <label for="<?php echo $this->get_field_id( 'iframe' ); ?>"><code><?php _e( 'iframe', $this->textdomain ); ?></code>
+                <input class="checkbox" type="checkbox" <?php checked( $instance['iframe'], true ); ?> id="<?php echo $this->get_field_id( 'iframe' ); ?>" name="<?php echo $this->get_field_name( 'iframe' ); ?>" />
+                <span class="description"><?php _e( 'Check the box to output your images in the camera+ iframe. Leaving the box unchecked with use javascript.', $this->textdomain ); ?></span></label>
+            </p>
+            <?php if ( !$instance['iframe'] ) { ?>
+            <p>
+                <label for="<?php echo $this->get_field_id( 'recent' ); ?>"><code><?php _e( 'image count:', $this->textdomain ); ?></code></label>
+                <input type="text" class="smallfat code" id="<?php echo $this->get_field_id( 'recent' ); ?>" name="<?php echo $this->get_field_name( 'recent' ); ?>" value="<?php echo esc_attr( $instance['recent'] ); ?>" maxlength="2" />
+            </p>
+            <?php } ?>
+            <p><?php sprintf( __( 'Don\'t have a <a href="%s">Camera+</a> account? Get the <a href="%s">app</a>.', $this->textdomain ), 'http://frosty.me/camera-plus/' ); ?></p>
 			</div>
 			<div style="clear:both;">&nbsp;</div>
 		<?php
