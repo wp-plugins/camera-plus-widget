@@ -10,7 +10,7 @@ A widget to showcase your camera+ uploaded photos.
 
 == Description ==
 
-Activate the plugin then add it to any available sidebar in **Appearance->Widgets**. The widget uses the newley repleased [Camera+](http://frosty.me/camera-plus/) [API](http://api.camerapl.us/). 
+Activate the plugin then add it to any available sidebar in **Appearance&rarr;Widgets**. The widget uses the newley repleased [Camera+](http://frosty.me/camera-plus/) [API](http://api.camerapl.us/). 
 
 For question please visit my blog @ [http://austinpassy.com](http://austinpassy.com/wordpress-plugins/camera-plus-widget/)
 
