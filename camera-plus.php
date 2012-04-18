@@ -3,7 +3,7 @@
  * Plugin Name: Camera+ Widget
  * Plugin URI: http://austinpassy.com/wordpress-plugins/camera-plus-widget
  * Description: Showcase your <a href="http://frosty.me/camera-plus/">camera+</a> photos in a widget.
- * Version: 0.1
+ * Version: 0.1.1
  * Author: Austin Passy
  * Author URI: http://austinpassy.com
  *
@@ -251,7 +251,7 @@ if ( !class_exists( 'camera_plus_widget' ) ) {
                 <input type="text" class="smallfat code" id="<?php echo $this->get_field_id( 'recent' ); ?>" name="<?php echo $this->get_field_name( 'recent' ); ?>" value="<?php echo esc_attr( $instance['recent'] ); ?>" maxlength="2" />
             </p>
             <?php } ?>
-            <p><?php sprintf( __( 'Don\'t have a <a href="%s">Camera+</a> account? Get the <a href="%s">app</a>.', $this->textdomain ), 'http://frosty.me/camera-plus/' ); ?></p>
+            <p><?php sprintf( __( 'Don\'t have a <a href="%s">Camera+</a> account? Get the iPhone <a href="%s">app</a>.', $this->textdomain ), 'http://frosty.me/camera-plus/' ); ?></p>
 			</div>
 			<div style="clear:both;">&nbsp;</div>
 		<?php

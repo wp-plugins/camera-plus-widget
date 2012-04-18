@@ -1,0 +1,181 @@
+# Copyright (C) 2012 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/camera-plus-widget\n"
+"POT-Creation-Date: 2012-03-16 17:19:09+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: camera-plus.php:42
+msgid "An advanced widget that showcases your camera+ photos."
+msgstr ""
+
+#: camera-plus.php:44
+msgid "Camera+"
+msgstr ""
+
+#: camera-plus.php:127
+msgid "My Camera+ Photos"
+msgstr ""
+
+#: camera-plus.php:147
+msgid "1"
+msgstr ""
+
+#: camera-plus.php:147
+msgid "2"
+msgstr ""
+
+#: camera-plus.php:147
+msgid "3"
+msgstr ""
+
+#: camera-plus.php:147
+msgid "4"
+msgstr ""
+
+#: camera-plus.php:147
+msgid "5"
+msgstr ""
+
+#: camera-plus.php:147
+msgid "6"
+msgstr ""
+
+#: camera-plus.php:147
+msgid "7"
+msgstr ""
+
+#: camera-plus.php:147
+msgid "8"
+msgstr ""
+
+#: camera-plus.php:147
+msgid "9"
+msgstr ""
+
+#: camera-plus.php:147
+msgid "10"
+msgstr ""
+
+#: camera-plus.php:148
+msgid "Dark"
+msgstr ""
+
+#: camera-plus.php:148
+msgid "Light"
+msgstr ""
+
+#: camera-plus.php:149
+msgid "Small"
+msgstr ""
+
+#: camera-plus.php:149
+msgid "Medium"
+msgstr ""
+
+#: camera-plus.php:149
+msgid "Large"
+msgstr ""
+
+#: camera-plus.php:149
+msgid "None"
+msgstr ""
+
+#: camera-plus.php:150
+msgid "Straight"
+msgstr ""
+
+#: camera-plus.php:150
+msgid "Skewed"
+msgstr ""
+
+#: camera-plus.php:151
+msgid "Yes"
+msgstr ""
+
+#: camera-plus.php:151
+msgid "No"
+msgstr ""
+
+#: camera-plus.php:157
+msgid "Title:"
+msgstr ""
+
+#: camera-plus.php:161
+msgid "widget width:"
+msgstr ""
+
+#: camera-plus.php:165
+msgid "widget height:"
+msgstr ""
+
+#: camera-plus.php:172
+msgid "user name"
+msgstr ""
+
+#: camera-plus.php:176
+msgid "rows"
+msgstr ""
+
+#: camera-plus.php:184
+msgid "columns"
+msgstr ""
+
+#: camera-plus.php:192
+msgid "thumbnail size"
+msgstr ""
+
+#: camera-plus.php:196
+msgid "color"
+msgstr ""
+
+#: camera-plus.php:204
+msgid "camera+ logo"
+msgstr ""
+
+#: camera-plus.php:215
+msgid "background color"
+msgstr ""
+
+#: camera-plus.php:217
+msgid "Use CSS value."
+msgstr ""
+
+#: camera-plus.php:220
+msgid "heading"
+msgstr ""
+
+#: camera-plus.php:228
+msgid "thumbnail style"
+msgstr ""
+
+#: camera-plus.php:236
+msgid "animated"
+msgstr ""
+
+#: camera-plus.php:244
+msgid "iframe"
+msgstr ""
+
+#: camera-plus.php:246
+msgid ""
+"Check the box to output your images in the camera+ iframe. Leaving the box "
+"unchecked with use javascript."
+msgstr ""
+
+#: camera-plus.php:250
+msgid "image count:"
+msgstr ""
+
+#: camera-plus.php:254
+msgid ""
+"Don't have a <a href=\"%s\">Camera+</a> account? Get the <a href=\"%s\">app</"
+"a>."
+msgstr ""
