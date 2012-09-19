@@ -3,7 +3,7 @@
  * Plugin Name: Camera+ Widget
  * Plugin URI: http://austinpassy.com/wordpress-plugins/camera-plus-widget
  * Description: Showcase your <a href="http://frosty.me/camera-plus/">camera+</a> photos in a widget.
- * Version: 0.1.1
+ * Version: 0.1.2
  * Author: Austin Passy
  * Author URI: http://austinpassy.com
  *
@@ -69,7 +69,10 @@ if ( !class_exists( 'camera_plus_widget' ) ) {
 			$args['animated'] = $instance['animated'];
 			$args['iframe'] = isset( $instance['iframe'] ) ? $instance['iframe'] : false;
 			$args['recent'] = !empty( $instance['recent'] ) ? intval( $instance['recent'] ) : '9';
-	
+			$args['love'] = isset( $instance['love'] ) ? $instance['love'] : true;
+			
+			$link_love = ( $args['love'] ) ? sprintf( __( '<p><a href="%s">Camera+</a> widget built by <a href="%s">Frosty</a>.</p>', $this->textdomain ), 'http://frosty.me/camera-plus/', 'http://austinpassy.com/wordpress-plugins/camera-plus-widget/' ) : null;
+			
 			echo $before_widget;
 	
 			if ( $instance['title'] )
@@ -78,10 +81,14 @@ if ( !class_exists( 'camera_plus_widget' ) ) {
 			if ( $instance['iframe'] ) {
 				
 				echo "<iframe style=\"width: {$args['width']}px; height: {$args['height']}px;\" allowtransparency=\"true\" scrolling=\"no\" frameborder=\"0\" src=\"http://campl.us/user/{$args['user']}:widget?rows={$args['rows']}&amp;columns={$args['columns']}&amp;thumbnailsize={$args['thumbsize']}&amp;color={$args['color']}&amp;backgroundcolor={$args['background']}&amp;logostyle={$args['logo']}&amp;thumbnailstyle={$args['thumbstyle']}&amp;heading={$args['heading']}&amp;animated={$args['animated']}\"></iframe>";
+				
+				if ( !is_null( $link_love ) ) echo $link_love;
 			
 			} else {
 				
 				echo "<script type=\"text/javascript\" src=\"http://campl.us/photog/{$args['user']}/recent.js?num_pics={$args['recent']}\"></script>";
+				
+				if ( !is_null( $link_love ) ) echo $link_love;
 				
 			}
 	
@@ -113,6 +120,7 @@ if ( !class_exists( 'camera_plus_widget' ) ) {
 			$instance['animated'] = $new_instance['animated'];
 			$instance['iframe'] = isset( $new_instance['iframe'] ) ? true : false;
 			$instance['recent'] = !empty( $new_instance['recent'] ) ? intval( $new_instance['recent'] ) : '9';
+			$instance['love'] = isset( $new_instance['love'] ) ? true : false;
 	
 			return $instance;
 		}
@@ -141,6 +149,7 @@ if ( !class_exists( 'camera_plus_widget' ) ) {
 				'animated'	=> 'yes',
 				'iframe'	=> true,
 				'recent'	=> '9',
+				'love'		=> true,
 			);
 			$instance = wp_parse_args( (array) $instance, $defaults );
 			
@@ -240,6 +249,11 @@ if ( !class_exists( 'camera_plus_widget' ) ) {
 					<?php } ?>
 				</select>
 			</p>
+            <p>
+                <label for="<?php echo $this->get_field_id( 'love' ); ?>">
+                <input class="checkbox" type="checkbox" <?php checked( $instance['love'], true ); ?> id="<?php echo $this->get_field_id( 'love' ); ?>" name="<?php echo $this->get_field_name( 'love' ); ?>" />
+                <span class="description"><?php _e( 'Show some author love.', $this->textdomain ); ?></span></label>
+            </p>
             <p>
                 <label for="<?php echo $this->get_field_id( 'iframe' ); ?>"><code><?php _e( 'iframe', $this->textdomain ); ?></code>
                 <input class="checkbox" type="checkbox" <?php checked( $instance['iframe'], true ); ?> id="<?php echo $this->get_field_id( 'iframe' ); ?>" name="<?php echo $this->get_field_name( 'iframe' ); ?>" />
