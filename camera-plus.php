@@ -3,7 +3,7 @@
  * Plugin Name: Camera+ Widget
  * Plugin URI: http://austinpassy.com/wordpress-plugins/camera-plus-widget
  * Description: Showcase your <a href="http://frosty.me/camera-plus/">camera+</a> photos in a widget.
- * Version: 0.1.2
+ * Version: 0.1.2.1
  * Author: Austin Passy
  * Author URI: http://austinpassy.com
  *

@@ -32,6 +32,10 @@ Follow the steps below to install the plugin.
 
 == Changelog ==
 
+= Version 0.1.2.1 (2/20/13) =
+
+* Added Slovakian (sk) translation. Thanks Branco at WebHostingGeeks.com.
+
 = Version 0.1.2 (9/19/12) =
 
 * Added `widget-only` tag per [Justin's](http://justintadlock.com/archives/2012/08/30/proposal-for-widget-only-plugins-in-the-repository) post.

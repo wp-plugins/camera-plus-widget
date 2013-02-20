@@ -1,0 +1,185 @@
+# Copyright (C) 2012 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/camera-plus-widget\n"
+"POT-Creation-Date: 2012-03-16 17:19:09+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-02-20 07:42-0800\n"
+"Last-Translator: Austin Passy <austin@thefrosty.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: camera-plus.php:42
+msgid "An advanced widget that showcases your camera+ photos."
+msgstr "Pokročilé widget, ktorá mapuje kamera + fotografie."
+
+#: camera-plus.php:44
+msgid "Camera+"
+msgstr "Fotoaparát +"
+
+#: camera-plus.php:127
+msgid "My Camera+ Photos"
+msgstr "Môj fotoaparát + fotografie"
+
+#: camera-plus.php:147
+msgid "1"
+msgstr "1"
+
+#: camera-plus.php:147
+msgid "2"
+msgstr "2"
+
+#: camera-plus.php:147
+msgid "3"
+msgstr "3"
+
+#: camera-plus.php:147
+msgid "4"
+msgstr "4"
+
+#: camera-plus.php:147
+msgid "5"
+msgstr "5"
+
+#: camera-plus.php:147
+msgid "6"
+msgstr "6"
+
+#: camera-plus.php:147
+msgid "7"
+msgstr "7"
+
+#: camera-plus.php:147
+msgid "8"
+msgstr "8"
+
+#: camera-plus.php:147
+msgid "9"
+msgstr "9"
+
+#: camera-plus.php:147
+msgid "10"
+msgstr "10"
+
+#: camera-plus.php:148
+msgid "Dark"
+msgstr "Tmavé"
+
+#: camera-plus.php:148
+msgid "Light"
+msgstr "Svetlo"
+
+#: camera-plus.php:149
+msgid "Small"
+msgstr "Malé"
+
+#: camera-plus.php:149
+msgid "Medium"
+msgstr "Médium"
+
+#: camera-plus.php:149
+msgid "Large"
+msgstr "Veľké"
+
+#: camera-plus.php:149
+msgid "None"
+msgstr "Žiadny"
+
+#: camera-plus.php:150
+msgid "Straight"
+msgstr "Rovno"
+
+#: camera-plus.php:150
+msgid "Skewed"
+msgstr "Skosený"
+
+#: camera-plus.php:151
+msgid "Yes"
+msgstr "áno"
+
+#: camera-plus.php:151
+msgid "No"
+msgstr "nie"
+
+#: camera-plus.php:157
+msgid "Title:"
+msgstr "Názov:"
+
+#: camera-plus.php:161
+msgid "widget width:"
+msgstr "šírka widget:"
+
+#: camera-plus.php:165
+msgid "widget height:"
+msgstr "výška widget:"
+
+#: camera-plus.php:172
+msgid "user name"
+msgstr "meno používateľa"
+
+#: camera-plus.php:176
+msgid "rows"
+msgstr "riadky"
+
+#: camera-plus.php:184
+msgid "columns"
+msgstr "stĺpce"
+
+#: camera-plus.php:192
+msgid "thumbnail size"
+msgstr "veľkosť miniatúry."
+
+#: camera-plus.php:196
+msgid "color"
+msgstr "Farba"
+
+#: camera-plus.php:204
+msgid "camera+ logo"
+msgstr "fotoaparát + logo"
+
+#: camera-plus.php:215
+msgid "background color"
+msgstr "Farba pozadia"
+
+#: camera-plus.php:217
+msgid "Use CSS value."
+msgstr "Použite hodnotu CSS."
+
+#: camera-plus.php:220
+msgid "heading"
+msgstr "nadpis"
+
+#: camera-plus.php:228
+msgid "thumbnail style"
+msgstr "náhľad štýl"
+
+#: camera-plus.php:236
+msgid "animated"
+msgstr "animované"
+
+#: camera-plus.php:244
+msgid "iframe"
+msgstr "iframe"
+
+#: camera-plus.php:246
+msgid ""
+"Check the box to output your images in the camera+ iframe. Leaving the box "
+"unchecked with use javascript."
+msgstr ""
+"Začiarknite políčko na výstup obrázkov fotoaparátu + iframe. Odchod do poľa "
+"Nekontrolovaná použitie JavaScript."
+
+#: camera-plus.php:250
+msgid "image count:"
+msgstr "Počet obrázkov:"
+
+#: camera-plus.php:254
+msgid ""
+"Don't have a <a href=\"%s\">Camera+</a> account? Get the <a href=\"%s\">app</"
+"a>."
+msgstr ""
+"Nemáte účet <a href=\"%s\">kamera +</a> ? Dostať <a href=\"%s\">app</a>a >."
