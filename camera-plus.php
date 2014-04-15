@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: Camera+ Widget
- * Plugin URI: http://austinpassy.com/wordpress-plugins/camera-plus-widget
- * Description: Showcase your <a href="http://frosty.me/camera-plus/">camera+</a> photos in a widget.
- * Version: 0.1.2.1
+ * Plugin URI: http://austin.passy.co/wordpress-plugins/camera-plus-widget
+ * Description: Showcase your iPhone <a href="http://frosty.me/camera-plusAPP">camera+</a> photos in a widget.
+ * Version: 0.2
  * Author: Austin Passy
- * Author URI: http://austinpassy.com
+ * Author URI: http://austin.passy.co
  *
- * @copyright 2012
+ * @copyright 2012 - 2014
  * @author Austin Passy
  * @link http://frostywebdesigns.com/
  * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -29,15 +29,17 @@ if ( !class_exists( 'camera_plus_widget' ) ) {
 
 	class camera_plus_widget extends WP_Widget {
 	
-		var $prefix;
-		var $textdomain;
+		var $prefix,
+			$textdomain,
+			$shortlink;
 	
 		/**
 		 * Set up the widget's unique name, ID, class, description, and other options.
 		 */
 		function camera_plus_widget() {
-			$this->prefix = 'camera-plus-widget';
-			$this->textdomain = 'camera-plus';
+			$this->prefix		= 'camera-plus-widget';
+			$this->textdomain	= 'camera-plus';
+			$this->shortlink	= 'http://frosty.me/camera-plusAPP';
 	
 			$widget_ops = array( 'classname' => 'cameraplus', 'description' => __( 'An advanced widget that showcases your camera+ photos.', $this->textdomain ) );
 			$control_ops = array( 'width' => 525, 'height' => 350, 'id_base' => "{$this->prefix}-cameraplus" );
@@ -71,7 +73,7 @@ if ( !class_exists( 'camera_plus_widget' ) ) {
 			$args['recent'] = !empty( $instance['recent'] ) ? intval( $instance['recent'] ) : '9';
 			$args['love'] = isset( $instance['love'] ) ? $instance['love'] : true;
 			
-			$link_love = ( $args['love'] ) ? sprintf( __( '<p><a href="%s">Camera+</a> widget built by <a href="%s">Frosty</a>.</p>', $this->textdomain ), 'http://frosty.me/camera-plus/', 'http://austinpassy.com/wordpress-plugins/camera-plus-widget/' ) : null;
+			$link_love = ( $args['love'] ) ? sprintf( __( '<p><a href="%s">Camera+</a> widget built by <a href="%s">Frosty</a>.</p>', $this->textdomain ), $this->shortlink, 'http://austinpassy.com/wordpress-plugins/camera-plus-widget/' ) : null;
 			
 			echo $before_widget;
 	
@@ -265,7 +267,7 @@ if ( !class_exists( 'camera_plus_widget' ) ) {
                 <input type="text" class="smallfat code" id="<?php echo $this->get_field_id( 'recent' ); ?>" name="<?php echo $this->get_field_name( 'recent' ); ?>" value="<?php echo esc_attr( $instance['recent'] ); ?>" maxlength="2" />
             </p>
             <?php } ?>
-            <p><?php sprintf( __( 'Don\'t have a <a href="%s">Camera+</a> account? Get the iPhone <a href="%s">app</a>.', $this->textdomain ), 'http://frosty.me/camera-plus/' ); ?></p>
+            <p><?php sprintf( __( 'Don\'t have a <a href="%1$s">Camera+</a> account? Get the iPhone <a href="%1$s">app</a>.', $this->textdomain ), $this->shortlink ); ?></p>
 			</div>
 			<div style="clear:both;">&nbsp;</div>
 		<?php
@@ -273,5 +275,3 @@ if ( !class_exists( 'camera_plus_widget' ) ) {
 	}
 	
 };
-
-?>

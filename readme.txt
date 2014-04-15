@@ -1,18 +1,18 @@
 === Camera+ Widget ===
 Contributors: austyfrosty
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E4PREW7W59L8Q
-Tags: widget-only, camera+, camera plugin, widget
+Tags: widget-only, camera, camera-plus, iPhone, widget, widgets
 Requires at least: 3.0
-Tested up to: 3.5
+Tested up to: 3.9
 Stable tag: trunk
 
 A widget to showcase your camera+ uploaded photos.
 
 == Description ==
 
-Activate the plugin then add it to any available sidebar in **Appearance&rarr;Widgets**. The widget uses the newley released [Camera+](http://frosty.me/camera-plus/) [API](http://api.camerapl.us/). 
+Activate the plugin then add it to any available sidebar in **Appearance&rarr;Widgets**. The widget uses the newley released [Camera+](http://frosty.me/camera-plusAPP) [API](http://api.camerapl.us/). 
 
-For question please visit my blog @ [http://austinpassy.com](http://austinpassy.com/wordpress-plugins/camera-plus-widget/)
+For question please visit my blog @ [http://austin.passy.co](http://austin.passy.co/wordpress-plugins/camera-plus-widget/)
 
 And thanks for rating it! -->
 
@@ -31,6 +31,11 @@ Follow the steps below to install the plugin.
 1. Widget output.
 
 == Changelog ==
+
+= Version 0.2 (4/15/14) =
+
+* Fix sprintf() error.
+* Clean up code.
 
 = Version 0.1.2.1 (2/20/13) =
 
