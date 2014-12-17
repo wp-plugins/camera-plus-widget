@@ -3,11 +3,11 @@
  * Plugin Name: Camera+ Widget
  * Plugin URI: http://austin.passy.co/wordpress-plugins/camera-plus-widget
  * Description: Showcase your iPhone <a href="http://frosty.me/camera-plusAPP">camera+</a> photos in a widget.
- * Version: 0.2
+ * Version: 0.3
  * Author: Austin Passy
  * Author URI: http://austin.passy.co
  *
- * @copyright 2012 - 2014
+ * @copyright 2012 - 2015
  * @author Austin Passy
  * @link http://frostywebdesigns.com/
  * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -20,7 +20,7 @@
  */
  
 if ( !class_exists( 'camera_plus_widget' ) ) {
-
+	
 	add_action( 'widgets_init', 'register_camera_plus_widget' );
 
 	function register_camera_plus_widget() {
@@ -73,7 +73,7 @@ if ( !class_exists( 'camera_plus_widget' ) ) {
 			$args['recent'] = !empty( $instance['recent'] ) ? intval( $instance['recent'] ) : '9';
 			$args['love'] = isset( $instance['love'] ) ? $instance['love'] : true;
 			
-			$link_love = ( $args['love'] ) ? sprintf( __( '<p><a href="%s">Camera+</a> widget built by <a href="%s">Frosty</a>.</p>', $this->textdomain ), $this->shortlink, 'http://austinpassy.com/wordpress-plugins/camera-plus-widget/' ) : null;
+			$link_love = ( $args['love'] ) ? sprintf( __( '<p><a href="%s">Camera+</a> widget built by <a href="%s">Frosty</a>.</p>', $this->textdomain ), $this->shortlink, 'http://austin.passy.co/wordpress-plugins/camera-plus-widget/' ) : null;
 			
 			echo $before_widget;
 	
@@ -83,16 +83,15 @@ if ( !class_exists( 'camera_plus_widget' ) ) {
 			if ( $instance['iframe'] ) {
 				
 				echo "<iframe style=\"width: {$args['width']}px; height: {$args['height']}px;\" allowtransparency=\"true\" scrolling=\"no\" frameborder=\"0\" src=\"http://campl.us/user/{$args['user']}:widget?rows={$args['rows']}&amp;columns={$args['columns']}&amp;thumbnailsize={$args['thumbsize']}&amp;color={$args['color']}&amp;backgroundcolor={$args['background']}&amp;logostyle={$args['logo']}&amp;thumbnailstyle={$args['thumbstyle']}&amp;heading={$args['heading']}&amp;animated={$args['animated']}\"></iframe>";
-				
-				if ( !is_null( $link_love ) ) echo $link_love;
-			
-			} else {
+						
+			}
+			else {
 				
 				echo "<script type=\"text/javascript\" src=\"http://campl.us/photog/{$args['user']}/recent.js?num_pics={$args['recent']}\"></script>";
-				
-				if ( !is_null( $link_love ) ) echo $link_love;
-				
+								
 			}
+			
+			if ( !is_null( $link_love ) ) echo $link_love;
 	
 			echo $after_widget;
 		}

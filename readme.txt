@@ -1,9 +1,9 @@
 === Camera+ Widget ===
 Contributors: austyfrosty
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E4PREW7W59L8Q
-Tags: widget-only, camera, camera-plus, iPhone, widget, widgets
+Tags: widget-only, camera, camera-plus, iPhone, widget, widgets, ios, photos
 Requires at least: 3.0
-Tested up to: 3.9
+Tested up to: 4.2
 Stable tag: trunk
 
 A widget to showcase your camera+ uploaded photos.
@@ -31,6 +31,10 @@ Follow the steps below to install the plugin.
 1. Widget output.
 
 == Changelog ==
+
+= Version 0.3 (12/17/14) =
+
+* Ready for WordPress 4.1
 
 = Version 0.2 (4/15/14) =
 
