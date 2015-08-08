@@ -3,13 +3,13 @@
  * Plugin Name: Camera+ Widget
  * Plugin URI: http://austin.passy.co/wordpress-plugins/camera-plus-widget
  * Description: Showcase your iPhone <a href="http://frosty.me/camera-plusAPP">camera+</a> photos in a widget.
- * Version: 0.3
+ * Version: 0.3.1
  * Author: Austin Passy
  * Author URI: http://austin.passy.co
  *
  * @copyright 2012 - 2015
  * @author Austin Passy
- * @link http://frostywebdesigns.com/
+ * @link http://frosty.media/
  * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *
  * This program is distributed in the hope that it will be useful,
@@ -36,15 +36,15 @@ if ( !class_exists( 'camera_plus_widget' ) ) {
 		/**
 		 * Set up the widget's unique name, ID, class, description, and other options.
 		 */
-		function camera_plus_widget() {
+		function __construct() {
 			$this->prefix		= 'camera-plus-widget';
 			$this->textdomain	= 'camera-plus';
 			$this->shortlink	= 'http://frosty.me/camera-plusAPP';
 	
 			$widget_ops = array( 'classname' => 'cameraplus', 'description' => __( 'An advanced widget that showcases your camera+ photos.', $this->textdomain ) );
 			$control_ops = array( 'width' => 525, 'height' => 350, 'id_base' => "{$this->prefix}-cameraplus" );
-			$this->WP_Widget( "{$this->prefix}-cameraplus", __( 'Camera+', $this->textdomain ), $widget_ops, $control_ops );
-		}
+            parent::__construct( "{$this->prefix}-cameraplus", __( 'Camera+', $this->textdomain ), $widget_ops, $control_ops );
+        }
 	
 		/**
 		 * Outputs the widget based on the arguments input through the widget controls.
